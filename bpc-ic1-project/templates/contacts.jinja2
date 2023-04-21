@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact app</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
+<body>
+    <div class="app-div">
+        <h1>Contacts page</h1>
+        <div class="contacts">
+             <table>
+                <tr>
+                    <th></th>
+                    <th>Name</th>
+                    <th>Surname</th>
+                    <th>Contact</th>
+                </tr>
+                 {% for contact in content.contacts %}
+                <tr>
+                    <td>{{ contact[0] }}</td>
+                    <td>{{ contact[2] }}</td>
+                    <td>{{ contact[3] }}</td>
+                    <td>{{ contact[1] }}: {{ contact[4] }}</td>
+                </tr>
+                 {% endfor %}
+             </table>
+        </div>
+
+        <div class="add-contact">
+            <h3>Create new Contact</h3>
+            <form method="post" action="/contacts/{{ session.username }}">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name"><br>
+                <label for="surname">Surname:</label>
+                <input type="text" id="surname" name="surname"><br>
+                <select onchange="updateLabel()" style="display: block;" name="type" id="type">
+                    <option value="E-mail">E-mail</option>
+                    <option value="Phone">Phone</option>
+                    <option value="Mobil">Mobil</option>
+                    <option value="Fax">Fax</option>
+                </select>
+                <label id="type-label" for="value">E-mail:</label>
+                <input type="text" id="value" name="value"><br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+
+<script>
+function updateLabel() {
+  let type = document.getElementById("type").value;
+  document.getElementById("type-label").textContent = type + ":";
+}
+</script>
+
+
+</body>
+
+
+</html>

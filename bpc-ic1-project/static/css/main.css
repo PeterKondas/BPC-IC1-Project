@@ -1,0 +1,152 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  background: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.div-form {
+    position: relative;
+    min-height: 100vh;
+}
+
+
+.div-form form {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #ffffff;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.div-form input[type=text],
+.div-form input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+/*
+.div-form input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.div-form input[type=submit]:hover {
+  background-color: #45a049;
+}
+*/
+
+.div-form div {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.app-button {
+    padding: 10px 20px;
+    background: #343434;
+    border: none;
+    font-size: 1em;
+    display: block;
+    margin: 10px auto;
+    color: #ffffff;
+    cursor: pointer;
+}
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+.app-button:hover {
+    background: #656565;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.app-div {
+    padding: 20px 40px;
+}
+
+.contacts {
+    margin-bottom: 50px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+.contacts table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.contacts th, .contacts td {
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+.contacts th {
+  background-color: #e2e2e2;
+  color: #444;
+  font-weight: bold;
+}
+
+.contacts tr:hover {
+  background-color: #ffffff;
+}
+
+.add-contact {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #f5f5f5;
+    border-top: 2px solid #cccccc;
+}
+
+.add-contact h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+    color: #343434;
+}
+
+.add-contact label {
+  display: inline-block;
+  width: 80px;
+  margin-right: 10px;
+}
+
+.add-contact input[type="text"],
+.add-contact select {
+  display: inline-block;
+  width: 200px;
+  padding: 5px;
+  margin-bottom: 10px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.add-contact input[type="submit"] {
+  display: block;
+    padding: 10px 20px;
+  background-color: #343434;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+    font-size: 1em;
+    margin-top: 10px;
+}
+
+.add-contact input[type="submit"]:hover {
+  background-color: #656565;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
